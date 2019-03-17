@@ -56,6 +56,26 @@ main {
 /*    float: left;*/
 }
 
+.social-links {
+    padding: 5px;
+}
+
+.social-links li {
+    font-size: 200%;
+    line-height: 100%;
+    display: inline-block;
+    margin: 5px;
+}
+
+.social-links i {
+    color: white;
+    opacity: 0.75;
+}
+
+.social-links i:hover {
+    opacity: 1;
+}
+
 #scroll-down {
     display: flex;
     align-self: flex-end;
