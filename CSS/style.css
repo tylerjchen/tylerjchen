@@ -104,15 +104,17 @@ main {
 /*PROJECTS*/
 
 #projects-container {
+    width: 100%;
+    min-height: 100%;
     background-color: white;
 }
 
-@media screen and (min-width: 1024px) {
+/*@media screen and (min-width: 1024px) {
   #projects-container {
     height: 95vh;
     background-color: white;
   }
-}
+}*/
 
 .projects-text-container {
     display: flex;
