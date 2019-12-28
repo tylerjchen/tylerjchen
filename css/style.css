@@ -90,12 +90,7 @@ main {
     left: 50%;
     right: 50%;
     bottom: 3%;
-    width: 20px;
-    height: 40px;
-    padding: 2px 13px;
-    border: 2px solid #fff;
-    border-radius: 40px;
-    font-size: 35px;
+    font-size: 30px;
     color: #fff;
 }
 
