@@ -1,160 +1,319 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Tyler Chen</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.css"
+      media="screen, projection"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script
+      src="https://kit.fontawesome.com/02dbfd28a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto"
+      rel="stylesheet"
+    />
 
-<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-135917931-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-135917931-1");
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-	<title>Tyler Chen</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen, projection" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<script src="https://kit.fontawesome.com/02dbfd28a9.js" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <body>
+    <!-- COVER -->
+    <div id="cover-container">
+      <img class="cover" src="assets/cover.jpg" />
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135917931-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'UA-135917931-1');
-	</script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+      <div class="cover-text-container">
+        <h2 style="margin: 2.3733333333rem 0 1.5rem 0" class="name-text">
+          I'm Tyler Chen
+        </h2>
 
-<body>
-	<!-- COVER -->
-	<div id="cover-container">
-		<img class="cover" src="assets/cover.jpg">
+        <h6><span class="sub-text"></span></h6>
 
-		<div class="cover-text-container">
-			<h2 style='margin: 2.3733333333rem 0 1.5rem 0;' class="name-text">I'm Tyler Chen</h2>
+        <ul class="social-links">
+          <li>
+            <a href="assets/tyler-chen-resume.pdf" target="_blank"
+              ><i class="fas fa-file-alt"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/tylerjchen" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/tylerjchen" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:tj3chen@uwaterloo.ca" target="_blank"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div id="scroll-down">
+        <a id="button" href="#projects-container"
+          ><i class="fas fa-arrow-circle-down" aria-hidden="true"></i
+        ></a>
+      </div>
+    </div>
 
-			<h6><span class="sub-text"></span></h6>
-
-
-			<ul class="social-links">
-				<li><a href="assets/tylerChenResume.pdf" target="_blank"><i class="fa fa-file-text"></i></a></li>
-				<li><a href="https://github.com/tylerjchen" target="_blank"><i class="fab fa-github"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/tylerjchen" target="_blank"><i
-							class="fab fa-linkedin"></i></a></li>
-				<li><a href="mailto:tj3chen@uwaterloo.ca" target="_blank"><i class="fa fa-envelope"></i></a></li>
-			</ul>
-
-
-		</div>
-		<div id="scroll-down">
-			<a id="button" href="#projects-container"><i class="fas fa-arrow-circle-down" aria-hidden="true"></i></a>
-		</div>
-	</div>
-
-	<!-- PROJECTS -->
-	<div id="projects-container">
-		<div class="projects-text-container">
-			<h2 class="project-text">Projects</h2>
-		</div>
+    <!-- PROJECTS -->
+    <div id="projects-container">
+      <div class="projects-text-container">
+        <h2 class="project-text">Projects</h2>
+      </div>
+      <div class="row align-items-center">
 		<div class="row align-items-center">
 			<div class="col s12 m6 l4">
-				<div class="card large">
-					<div class="card-image">
-						<img src="assets/peekaboo.png">
-						<span class="card-title background-gradient">Peekaboo</span>
-					</div>
-					<div class="card-content">
-						<p>A responsive React application that utilizes a machine learning API to detect faces in
-							images and a RESTful API built with Express to
-							drive user registration and authentication.</p>
-					</div>
-					<div class="card-action">
-						<a href="https://tjc-facial-recognition-app.herokuapp.com/" target="_blank">Live Demo</a>
-						<a href="https://github.com/tylerjchen/peekaboo-front-end" target="_blank">Github</a>
-					</div>
+			  <div class="card large">
+				<div class="card-image">
+				  <img src="assets/default.png" />
+				  <span class="card-title background-gradient"
+					>Dog Breed Identifier</span
+				  >
 				</div>
-			</div>
-			<div class="col s12 m6 l4">
-				<div class="card large">
-					<div class="card-image">
-						<img src="assets/oregano.png">
-						<span style='color:black;' class="card-title background-gradient">Oregano</span>
-					</div>
-					<div class="card-content">
-						<p>A recipe management tool developed with Angular that enables users to create, modify, and edit their favourite recipes. User registration and authentication is driven by Firebase.
-						</p>
-					</div>
-					<div class="card-action">
-						<a href="https://oregano-1c9dc.web.app" target="_blank">Live Demo</a>
-						<a href="https://github.com/tylerjchen/oregano" target="_blank">Github</a>
-					</div>
+				<div class="card-content">
+				  <p>
+					A Jupyter Notebook containing EDA and experiments with using transfer learning to train a model that identifies dog breeds from images using TensorFlow and Keras.
+				  </p>
 				</div>
-			</div>
-			<div class="col s12 m6 l4">
-				<div class="card large">
-					<div class="card-image">
-						<img src="assets/quicksense.png">
-						<span class="card-title background-gradient">QuickSense</span>
-					</div>
-					<div class="card-content">
-						<p>A device that uses machine learning and object recognition to assist the visually
-							impaired in
-							retrieving essential items.</p>
-					</div>
-					<div class="card-action">
-						<a href="https://devpost.com/software/quicksense" target="_blank">More Info</a>
-					</div>
+				<div class="card-action">
+				  <a
+					href="https://github.com/tylerjchen/dog-breed-identifier"
+					target="_blank"
+					>Github</a
+				  >
 				</div>
+			  </div>
 			</div>
-			<div class="col s12 m6 l4">
-				<div class="card large">
-					<div class="card-image">
-						<img src="assets/budgetBoxhead.png">
-						<span class="card-title background-gradient">Budget Boxhead</span>
-					</div>
-					<div class="card-content">
-						<p>An endless, arcade 2D shooter game created in Python that utilizes the Pygame library.
-						</p>
-					</div>
-					<div class="card-action">
-						<a href="https://github.com/tylerjchen/Budget-Boxhead" target="_blank">Github</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        <div class="col s12 m6 l4">
+          <div class="card large">
+            <div class="card-image">
+              <img src="assets/default.png" />
+              <span class="card-title background-gradient"
+                >Heart Disease Predictor</span
+              >
+            </div>
+            <div class="card-content">
+              <p>
+                A Jupyter Notebook containing EDA and experimental models that
+                ultimately predicts whether an individual has heart disease with
+                over 88% accuracy an an AUC of 0.92.
+              </p>
+            </div>
+            <div class="card-action">
+              <a
+                href="https://github.com/tylerjchen/heart-disease-predictor"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card large">
+            <div class="card-image">
+              <img src="assets/default.png" />
+              <span class="card-title background-gradient">Bulldozer Price Predictor</span>
+            </div>
+            <div class="card-content">
+              <p>
+                A Jupyter Notebook containing EDA and an experimental model that
+                predicts prices of bulldozers from time series data.
+              </p>
+            </div>
+            <div class="card-action">
+              <a
+                href="https://github.com/tylerjchen/bulldozer-price-prediction"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card large">
+            <div class="card-image">
+              <img src="assets/storefront.png" />
+              <span class="card-title background-gradient">Storefront</span>
+            </div>
+            <div class="card-content">
+              <p>
+                A mock e-commerce site built supporting user authentication and product management with node.
+              </p>
+            </div>
+            <div class="card-action">
+              <a
+                href="https://tjc-storefront.herokuapp.com/"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/tylerjchen/storefront"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card large">
+            <div class="card-image">
+              <img src="assets/peekaboo.png" />
+              <span class="card-title background-gradient">Peekaboo</span>
+            </div>
+            <div class="card-content">
+              <p>
+                A responsive React application that utilizes a machine learning
+                API to detect faces in images and a RESTful API built with
+                Express to drive user registration and authentication.
+              </p>
+            </div>
+            <div class="card-action">
+              <a
+                href="https://tjc-facial-recognition-app.herokuapp.com/"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/tylerjchen/peekaboo-front-end"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card large">
+            <div class="card-image">
+              <img src="assets/oregano.png" />
+              <span style="color: black" class="card-title background-gradient"
+                >Oregano</span
+              >
+            </div>
+            <div class="card-content">
+              <p>
+                A recipe management tool developed with Angular that enables
+                users to create, modify, and edit their favourite recipes. User
+                registration and authentication is driven by Firebase.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://oregano-1c9dc.web.app" target="_blank"
+                >Live Demo</a
+              >
+              <a href="https://github.com/tylerjchen/oregano" target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card large">
+            <div class="card-image">
+              <img src="assets/quicksense.png" />
+              <span class="card-title background-gradient">QuickSense</span>
+            </div>
+            <div class="card-content">
+              <p>
+                A device that uses machine learning and object recognition to
+                assist the visually impaired in retrieving essential items.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://devpost.com/software/quicksense" target="_blank"
+                >More Info</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card large">
+            <div class="card-image">
+              <img src="assets/budgetBoxhead.png" />
+              <span class="card-title background-gradient">Budget Boxhead</span>
+            </div>
+            <div class="card-content">
+              <p>
+                An endless, arcade 2D shooter game created in Python that
+                utilizes the Pygame library.
+              </p>
+            </div>
+            <div class="card-action">
+              <a
+                href="https://github.com/tylerjchen/Budget-Boxhead"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- FOOTER -->
-	<div id="footer-container">
-		<ul class="nav-links">
-			<li><a class="nav-top" href="#cover-container">Top</a></li>
-			<li><a href="assets/tylerChenResume.pdf" target="_blank">Resume</a></li>
-		</ul>
-		<p>&copy; Tyler Chen</p>
-	</div>
+    <!-- FOOTER -->
+    <div id="footer-container">
+      <ul class="nav-links">
+        <li><a class="nav-top" href="#cover-container">Top</a></li>
+        <li><a href="assets/tyler-chen-resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+      <p>&copy; Tyler Chen</p>
+    </div>
 
-	<script type="text/javascript" src="js/typed.js"></script>
-	<script type="text/javascript">
-		var typed = new Typed(".sub-text", {
-			strings: ["and I'm a management engineer.", "and I'm a web developer.", "Let's build something great together."],
-			typeSpeed: 40,
-			backSpeed: 60,
-			loop: false
-		});
-	</script>
+    <script type="text/javascript" src="js/typed.js"></script>
+    <script type="text/javascript">
+      var typed = new Typed(".sub-text", {
+        strings: [
+          "and I'm a management engineer.",
+          "and I'm a software developer.",
+          "Let's build something great together.",
+        ],
+        typeSpeed: 40,
+        backSpeed: 60,
+        loop: false,
+      });
+    </script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$("a").on('click', function (event) {
-				if (this.hash !== "") {
-					event.preventDefault();
-					var hash = this.hash;
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 0, function () {
-
-					});
-				}
-			});
-		});
-	</script>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              0,
+              function () {}
+            );
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
